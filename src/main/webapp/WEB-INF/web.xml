@@ -1,14 +1,21 @@
-<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" 
          version="5.0">
 
     <servlet>
         <servlet-name>CartServlet</servlet-name>
-        <servlet-class>com.example.CartServlet</servlet-class>
+        <servlet-class>com.example.CartServlet</servlet-class><!--this line helps you do the servlet configuration-->
     </servlet>
 
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
-        <url-pattern>/cart</url-pattern>
+        <url-pattern>/cart</url-pattern><!--it is used for url mapping-->
     </servlet-mapping>
 
 </web-app>
+
+<!--deployment discripter of a java web application-->
+<!--it helps in configuring servlet-->
+<!--it maps the url to the servlet-->
+<!--defines application settings-->
+
+<!--jakarta=enterprise edition-->

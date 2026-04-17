@@ -4,16 +4,16 @@
 
 <modelVersion>4.0.0</modelVersion>
 
-<groupId>com.example</groupId>
-<artifactId>jsp-shopping-cart</artifactId>
-<version>1.0-SNAPSHOT</version>
-<packaging>war</packaging>
+<groupId>com.example</groupId><!--basic package information-->
+<artifactId>jsp-shopping-cart</artifactId><!--basic package information-->
+<version>1.0-SNAPSHOT</version><!--basic package information-->
+<packaging>war</packaging><!--basic package information-->
 
-<name>jsp-shopping-cart</name>
+<name>jsp-shopping-cart</name><!--project name-->
 
 <properties>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source><!--source and target version-17-->
+    <maven.compiler.target>17</maven.compiler.target><!--source and target version-17-->
 </properties>
 
 <dependencies>
@@ -25,6 +25,7 @@
     <version>6.0.0</version>
     <scope>provided</scope>
 </dependency>
+<!--used for httpservlet,httpservletrequest,httpsessions-->
 
 <dependency>
     <groupId>jakarta.servlet.jsp</groupId>
@@ -32,14 +33,14 @@
     <version>3.1.0</version>
     <scope>provided</scope>
 </dependency>
-
+<!--used for jsp pages-->
 
 <dependency>
     <groupId>org.glassfish.web</groupId>
     <artifactId>jakarta.servlet.jsp.jstl</artifactId>
     <version>2.0.0</version>
 </dependency>
-
+<!--used for c:foreach,c:choose,c:when-->
 
 
 </dependencies>
@@ -50,3 +51,10 @@
 
 
 </project>
+
+<!--pom-project object model-->
+<!--used to manage  dependencies, configure the project and build and manage the application-->
+<!--user submit the form-->
+<!--web xml maps the cartservlet-->
+<!--redirects to /cart-->
+<!--doget methode or forward to the cart.jsp-->
